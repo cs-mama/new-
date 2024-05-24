@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e6ffe6;
+    /* Light green background */
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    /* Increased max-width for larger screens */
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.survey-form h1 {
+    text-align: left;
+    /* Align heading to the right */
+    margin-bottom: 20px;
+    color: #006400;
+    /* Dark green heading */
+}
+
+.survey-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.survey-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    /* Dark green labels */
+}
+
+.survey-form input[type="text"],
+.survey-form input[type="email"],
+.survey-form input[type="tel"],
+.survey-form select,
+.survey-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.age-container {
+    border: 2px solid black;
+    /* Dark green border for age box */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.age-container label {
+    color:black;
+    /* Dark green label inside the box */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.age-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.age-group label {
+    flex: 1 1 calc(33.33% - 10px);
+    /* Adjust for three columns on larger screens */
+    min-width: 150px;
+    /* Ensures readability on smaller screens */
+    box-sizing: border-box;
+}
+
+.proficiency-group,
+.contest-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.proficiency-group label,
+.contest-group label {
+    flex: 1 1 calc(33.33% - 10px);
+    /* Adjust for three columns on larger screens */
+    min-width: 150px;
+    /* Ensures readability on smaller screens */
+    box-sizing: border-box;
+}
+
+.survey-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #006400;
+    /* Dark green button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.survey-form button:hover {
+    background-color: #004d00;
+    /* Darker green on hover */
+}
